@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="js/globals.js" defer></script>
+  <script src="js/login.js" defer></script>
+  <script src="js/unauthenticated.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div>
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <h1>Leesbare Link</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="register.html" class="button">Register</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container centered">
+      <article class="card min-width">
+        <h2>Login</h2>
+        <form id="login-form">
+          <div>
+            <label for="email">Email</label>
+            <input id="email" type="email" required>
+          </div>
+
+          <div>
+            <label for="password">Password</label>
+            <input id="password" type="password" required>
+          </div>
+
+          <input type="submit" value="Log in" class="button">
+
+        </form>
+      </article>
+    </div>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leesbare Link</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <script src="js/globals.js" defer></script>
+  <script src="js/authenticated.js" defer></script>
+  <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div>
+      <a href="index.html"><img src="images/logo.png" alt="Logo"></a>
+      <h1>Leesbare Link</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="logout.html" class="button">Log out</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <article class="card">
+        <h2>Create new Link!</h2>
+        <form id="create-form">
+          <div>
+            <label for="mapping">Mapping</label>
+            <input id="mapping" type="text" placeholder="e.g. search" required>
+          </div>
+
+          <div>
+            <label for="link">Link</label>
+            <input id="link" type="text" placeholder="e.g. https://www.google.com" required>
+          </div>
+
+          <input type="submit" value="Create" class="button">
+        </form>
+      </article>
+    </div>
+
+    <div class="container">
+      <div class="card">
+        <h2>Link mappings</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Mapping</th>
+              <th>Link</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="link-table">
+            <tr>
+              <td colspan="3"><p>No link mappings yet.</p></td>
+            </tr>
+        </table>
+
+      </div>
+    </div>
+  </main>
+  
+</body>
+</html>

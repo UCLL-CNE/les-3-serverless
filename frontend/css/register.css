@@ -1,0 +1,17 @@
+#register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#register-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+}

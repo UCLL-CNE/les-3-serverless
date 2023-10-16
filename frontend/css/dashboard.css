@@ -1,0 +1,58 @@
+#create-form {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+#create-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: 20rem;
+}
+
+#create-form div input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: lightgrey;
+}
+
+table thead tr th {
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table tbody tr td {
+    padding: 0.5rem;
+    min-width: 20rem;
+}
+
+table tbody tr {
+    border-bottom: 1px solid #ccc;
+}
+
+table tbody tr:last-of-type() {
+    border-bottom: none;
+}
+
+table tbody tr td:last-of-type {
+    text-align: center;
+    min-width: auto;
+}
+
+table tbody tr:nth-last-of-type(odd) {
+    background-color: #eee;
+}

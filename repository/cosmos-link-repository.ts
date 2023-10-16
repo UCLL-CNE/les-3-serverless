@@ -101,7 +101,7 @@ export class CosmosLinkRepository {
   }
 
   async removeLinkMapping(mapping: string): Promise<boolean> {
-    const { statusCode } = await this.container.item(mapping).delete();
+    const { statusCode } = await this.container.item(mapping, mapping.substring(0, 3)).delete();
     return statusCode === 204;
   }
 }

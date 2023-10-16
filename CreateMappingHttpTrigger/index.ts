@@ -15,6 +15,7 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
         await LinkService.getInstance().setLink(newLink);
 
         context.res = {
+            status: 201,
             body: newLink,
             headers: {
                 'Content-Type': 'application/json'
